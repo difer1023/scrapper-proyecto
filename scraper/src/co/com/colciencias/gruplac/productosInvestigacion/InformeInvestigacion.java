@@ -12,21 +12,11 @@ import java.util.ArrayList;
  *
  * @author L
  */
-public class LibroPublicado extends ProductoInvestigacion{
-    private String isbn;
+public class InformeInvestigacion extends ProductoInvestigacion{
     private int ano;
-    private String pais;
-    private String editorial;
+    private String proyecto;
     private ArrayList<Integrante> autores;
     private String tipo;
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
 
     public int getAno() {
         return ano;
@@ -36,28 +26,20 @@ public class LibroPublicado extends ProductoInvestigacion{
         this.ano = ano;
     }
 
-    public String getEditorial() {
-        return editorial;
+    public String getProyecto() {
+        return proyecto;
     }
 
-    public void setEditorial(String editorial) {
-        this.editorial = editorial;
+    public void setProyecto(String proyecto) {
+        this.proyecto = proyecto;
     }
-    
+
     public ArrayList<Integrante> getAutores() {
         return autores;
     }
 
     public void setAutores(ArrayList<Integrante> autores) {
         this.autores = autores;
-    }
-
-    public String getPais() {
-        return pais;
-    }
-
-    public void setPais(String pais) {
-        this.pais = pais;
     }
 
     public String getTipo() {
@@ -67,5 +49,4 @@ public class LibroPublicado extends ProductoInvestigacion{
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    
 }

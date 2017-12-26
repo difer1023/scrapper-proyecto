@@ -5,6 +5,7 @@
  */
 package co.com.colciencias.gruplac.productosInvestigacion;
 
+import co.com.colciencias.gruplac.Institucion;
 import co.com.colciencias.gruplac.Integrante;
 import java.util.ArrayList;
 
@@ -12,21 +13,13 @@ import java.util.ArrayList;
  *
  * @author L
  */
-public class LibroPublicado extends ProductoInvestigacion{
-    private String isbn;
+public class GeneracionContenidoMultimedia extends ProductoInvestigacion{
+    
     private int ano;
-    private String pais;
-    private String editorial;
+    private String medioCirculacion;
     private ArrayList<Integrante> autores;
+    private ArrayList<Institucion> instituciones;
     private String tipo;
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
 
     public int getAno() {
         return ano;
@@ -36,14 +29,14 @@ public class LibroPublicado extends ProductoInvestigacion{
         this.ano = ano;
     }
 
-    public String getEditorial() {
-        return editorial;
+    public String getMedioCirculacion() {
+        return medioCirculacion;
     }
 
-    public void setEditorial(String editorial) {
-        this.editorial = editorial;
+    public void setMedioCirculacion(String medioCirculacion) {
+        this.medioCirculacion = medioCirculacion;
     }
-    
+
     public ArrayList<Integrante> getAutores() {
         return autores;
     }
@@ -52,12 +45,12 @@ public class LibroPublicado extends ProductoInvestigacion{
         this.autores = autores;
     }
 
-    public String getPais() {
-        return pais;
+    public ArrayList<Institucion> getInstituciones() {
+        return instituciones;
     }
 
-    public void setPais(String pais) {
-        this.pais = pais;
+    public void setInstituciones(ArrayList<Institucion> instituciones) {
+        this.instituciones = instituciones;
     }
 
     public String getTipo() {
@@ -67,5 +60,4 @@ public class LibroPublicado extends ProductoInvestigacion{
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    
 }

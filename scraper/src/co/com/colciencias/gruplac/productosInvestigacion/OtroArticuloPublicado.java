@@ -12,7 +12,7 @@ import java.util.ArrayList;
  *
  * @author L
  */
-public class ArticuloInvestigacion extends ProductoInvestigacion{
+public class OtroArticuloPublicado extends ProductoInvestigacion{
     private String pais;
     private String issn;
     private int ano;
@@ -105,3 +105,4 @@ public class ArticuloInvestigacion extends ProductoInvestigacion{
     }
     
 }
+

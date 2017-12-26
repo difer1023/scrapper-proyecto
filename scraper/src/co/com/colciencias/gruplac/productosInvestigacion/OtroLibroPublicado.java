@@ -12,7 +12,7 @@ import java.util.ArrayList;
  *
  * @author L
  */
-public class LibroPublicado extends ProductoInvestigacion{
+public class OtroLibroPublicado extends ProductoInvestigacion{
     private String isbn;
     private int ano;
     private String pais;

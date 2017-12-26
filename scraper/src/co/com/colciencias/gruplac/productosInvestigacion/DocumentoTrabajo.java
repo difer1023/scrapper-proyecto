@@ -5,6 +5,7 @@
  */
 package co.com.colciencias.gruplac.productosInvestigacion;
 
+import co.com.colciencias.gruplac.Institucion;
 import co.com.colciencias.gruplac.Integrante;
 import java.util.ArrayList;
 
@@ -12,21 +13,14 @@ import java.util.ArrayList;
  *
  * @author L
  */
-public class LibroPublicado extends ProductoInvestigacion{
-    private String isbn;
+public class DocumentoTrabajo extends ProductoInvestigacion{
     private int ano;
-    private String pais;
-    private String editorial;
+    private String numPaginas;
     private ArrayList<Integrante> autores;
     private String tipo;
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
+    private ArrayList<Institucion> instituciones;
+    private String url;
+    private String doi;
 
     public int getAno() {
         return ano;
@@ -36,28 +30,20 @@ public class LibroPublicado extends ProductoInvestigacion{
         this.ano = ano;
     }
 
-    public String getEditorial() {
-        return editorial;
+    public String getNumPaginas() {
+        return numPaginas;
     }
 
-    public void setEditorial(String editorial) {
-        this.editorial = editorial;
+    public void setNumPaginas(String numPaginas) {
+        this.numPaginas = numPaginas;
     }
-    
+
     public ArrayList<Integrante> getAutores() {
         return autores;
     }
 
     public void setAutores(ArrayList<Integrante> autores) {
         this.autores = autores;
-    }
-
-    public String getPais() {
-        return pais;
-    }
-
-    public void setPais(String pais) {
-        this.pais = pais;
     }
 
     public String getTipo() {
@@ -67,5 +53,15 @@ public class LibroPublicado extends ProductoInvestigacion{
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    public ArrayList<Institucion> getInstituciones() {
+        return instituciones;
+    }
+
+    public void setInstituciones(ArrayList<Institucion> instituciones) {
+        this.instituciones = instituciones;
+    }
     
+    
+
 }
